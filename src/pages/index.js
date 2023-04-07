@@ -21,6 +21,14 @@ export default function Home() {
       </Head>
       <main className={styles.main}>
         <Banner btnClick={handleHomeBtnClick} btnText={"View stores nearby"} />
+        <div className={styles.heroImage}>
+          <Image
+            src="/static/hero-image.png"
+            alt="person drinking coffee"
+            width={700}
+            height={400}
+          />
+        </div>
       </main>
     </>
   );
