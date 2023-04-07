@@ -1,14 +1,17 @@
-import React from 'react'
-import { useRouter } from 'next/router'
+import React from "react";
+import { useRouter } from "next/router";
+import Link from "next/link";
 
 const CoffeeStore = () => {
-  const router = useRouter()
-  
+  const router = useRouter();
+
   return (
     <div>
-      
+      <Link href="">
+        <a>Back to home</a>
+      </Link>
     </div>
-  )
-}
+  );
+};
 
-export default CoffeeStore
+export default CoffeeStore;
