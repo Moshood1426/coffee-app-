@@ -3,6 +3,7 @@ import Image from "next/image";
 import { Inter } from "next/font/google";
 import styles from "@/styles/Home.module.css";
 import Banner from "@/components/banner";
+import Card from "../components/card";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -27,6 +28,14 @@ export default function Home() {
             alt="person drinking coffee"
             width={700}
             height={400}
+          />
+        </div>
+        <div className={styles.cardLayout}>
+          <Card
+            imgUrl={"/static/hero-image.png"}
+            name={"testing BS"}
+            link={"/static/hero-image.png"}
+            className={styles.card}
           />
         </div>
       </main>
