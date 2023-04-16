@@ -5,6 +5,7 @@ import styles from "../../styles/coffee-store.module.css";
 import coffeStoreData from "../../../coffee-stores.json";
 import Head from "next/head";
 import Image from "next/image";
+import cls from "classnames";
 
 export async function getStaticProps(staticProps) {
   const params = staticProps.params;
@@ -37,6 +38,8 @@ const CoffeeStore = ({ coffeeStore }) => {
   }
 
   const { address, name, neighbourhood, imgUrl } = coffeeStore;
+
+  const handleUpvoteButton = () => {};
 
   return (
     <div className={styles.layout}>
@@ -94,7 +97,7 @@ const CoffeeStore = ({ coffeeStore }) => {
               height="24"
               alt="star icon"
             />
-            <p className={styles.text}>{votingCount}</p>
+            {/* <p className={styles.text}>{votingCount}</p> */}
           </div>
 
           <button className={styles.upvoteButton} onClick={handleUpvoteButton}>
